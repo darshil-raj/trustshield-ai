@@ -36,10 +36,10 @@ const PayoutNotification = ({ claim, onClose, onViewClaims }) => {
             {/* Content */}
             <div className="text-center mb-6">
               <h3 className="text-xl font-bold text-text-primary mb-2">
-                Parametric Trigger Activated!
+                Real-Time Event Verified!
               </h3>
               <p className="text-text-secondary">
-                {claim.trigger} detected in your zone. Auto-claim generated.
+                {claim.trigger} validated through multi-signal verification. Payout approved.
               </p>
             </div>
             
@@ -58,7 +58,7 @@ const PayoutNotification = ({ claim, onClose, onViewClaims }) => {
             {/* Details */}
             <div className="space-y-3 mb-6">
               <div className="flex justify-between text-sm">
-                <span className="text-text-secondary">Claim ID</span>
+                <span className="text-text-secondary">Event ID</span>
                 <span className="text-text-primary font-mono">{claim.id}</span>
               </div>
               <div className="flex justify-between text-sm">
@@ -90,7 +90,7 @@ const PayoutNotification = ({ claim, onClose, onViewClaims }) => {
                 onClick={onViewClaims}
                 icon={ArrowRight}
               >
-                View Claims
+                View Verified Events
               </Button>
             </div>
           </motion.div>

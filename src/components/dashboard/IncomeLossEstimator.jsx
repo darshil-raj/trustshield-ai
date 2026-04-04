@@ -39,7 +39,7 @@ const IncomeLossEstimator = ({
           <div className="bg-surface/50 rounded-xl p-4 border border-border">
             <div className="flex items-center gap-2 text-text-secondary mb-1">
               <TrendingUp size={14} />
-              <span className="text-xs">Estimated Earnings</span>
+              <span className="text-xs">Verified Daily Income</span>
             </div>
             <p className="text-2xl font-bold text-text-primary font-mono">
               {formatCurrency(dailyEarnings)}
@@ -63,13 +63,13 @@ const IncomeLossEstimator = ({
         <div className="bg-surface rounded-xl p-5 border border-border mb-5">
           <div className="flex items-center justify-between mb-4">
             <div>
-              <p className="text-sm text-text-secondary mb-1">Income Loss</p>
+              <p className="text-sm text-text-secondary mb-1">Verified Income Impact</p>
               <p className="text-3xl font-bold text-error font-mono">
                 {formatCurrency(incomeLoss)}
               </p>
             </div>
             <div className="text-right">
-              <p className="text-sm text-text-secondary mb-1">Insurance Coverage</p>
+              <p className="text-sm text-text-secondary mb-1">Payout Amount</p>
               <p className="text-3xl font-bold text-success font-mono">
                 {formatCurrency(coverageAmount)}
               </p>
@@ -96,13 +96,13 @@ const IncomeLossEstimator = ({
         >
           <div className="flex items-center justify-center gap-2 mb-2">
             <Shield size={18} className="text-success" />
-            <span className="text-success font-semibold">You are protected!</span>
+            <span className="text-success font-semibold">Real-time loss detected!</span>
           </div>
           <p className="text-2xl font-bold text-success">
-            {protectionPercentage}% of your loss covered
+            {protectionPercentage}% of verified impact covered
           </p>
           <p className="text-sm text-success/80 mt-1">
-            Auto-payout initiated: {formatCurrency(coverageAmount)}
+            Payout triggered after validation: {formatCurrency(coverageAmount)}
           </p>
         </motion.div>
       </div>

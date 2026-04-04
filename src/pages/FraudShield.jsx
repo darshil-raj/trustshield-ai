@@ -43,7 +43,7 @@ const FraudShield = () => {
     <div>
       <Header 
         title="Fraud Shield Analysis" 
-        subtitle="Multi-signal verification for claim authenticity"
+        subtitle="We do not rely on a single signal. Every claim is cross-verified using multiple real-world data sources."
       />
 
       {/* Main Status Card */}
@@ -86,8 +86,8 @@ const FraudShield = () => {
           {/* Key Message */}
           <div className="mt-8 p-4 bg-surface/50 rounded-xl border border-success/20">
             <p className="text-text-primary text-center">
-              <span className="text-success font-semibold">Multi-signal verification</span> ensures claims are based on 
-              <span className="text-accent font-semibold"> real-world conditions</span>, not just GPS.
+              <span className="text-success font-semibold">Don't trust claims. Verify reality.</span>
+              {' '}Detects spoofing before payout approval.
             </p>
           </div>
         </div>

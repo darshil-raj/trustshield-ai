@@ -61,10 +61,10 @@ const TrustScoreBreakdown = ({ score = 77 }) => {
             </div>
             <div className="text-left">
               <h3 className="font-semibold text-text-primary flex items-center gap-2">
-                AI Trust Score Analysis
+                Verification Confidence Score
                 <Sparkles size={14} className="text-accent" />
               </h3>
-              <p className="text-sm text-text-secondary">Real-time AI evaluation</p>
+              <p className="text-sm text-text-secondary">Calculated using multi-signal validation including GPS, weather, and behavior</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -143,11 +143,11 @@ const TrustScoreBreakdown = ({ score = 77 }) => {
                 {/* Final Score */}
                 <div className="pt-4 border-t border-border">
                   <div className="flex items-center justify-between p-4 bg-accent-dim rounded-xl border border-accent/20">
-                    <span className="font-semibold text-text-primary">Final AI Trust Score</span>
+                    <span className="font-semibold text-text-primary">Final Verification Confidence</span>
                     <span className="text-2xl font-bold text-accent font-mono">{score}/100</span>
                   </div>
                   <p className="text-xs text-text-tertiary text-center mt-3">
-                    Score calculated using multi-signal AI verification
+                    Don't trust claims. Verify reality.
                   </p>
                 </div>
               </div>

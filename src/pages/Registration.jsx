@@ -107,7 +107,8 @@ const Registration = () => {
             <Shield className="text-white" size={32} />
           </div>
           <h1 className="text-3xl font-bold text-text-primary mb-2">TrustShield AI</h1>
-          <p className="text-text-secondary">Gig Worker Income Protection</p>
+          <p className="text-text-secondary">AI-powered Real-World Claim Verification</p>
+          <p className="text-xs text-text-tertiary mt-2">We verify real conditions before approving payouts</p>
         </div>
 
         {/* Progress Steps */}
@@ -150,8 +151,8 @@ const Registration = () => {
           {currentStep === 0 && (
             <div className="space-y-6">
               <div className="text-center mb-6">
-                <h2 className="text-xl font-semibold text-text-primary">Let's get started</h2>
-                <p className="text-text-secondary mt-1">Enter your basic information</p>
+                <h2 className="text-xl font-semibold text-text-primary">Initialize Verification Profile</h2>
+                <p className="text-text-secondary mt-1">Set up your real-time validation profile</p>
               </div>
               
               <Input
@@ -258,7 +259,7 @@ const Registration = () => {
                 onClick={handleNext}
                 icon={ArrowRight}
               >
-                Continue
+                Start Verification
               </Button>
             ) : (
               <Button 

@@ -16,7 +16,7 @@ import { useState } from 'react';
 
 const navItems = [
   { path: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { path: '/claims', label: 'Claims', icon: FileText },
+  { path: '/claims', label: 'Verified Events', icon: FileText },
   { path: '/analytics', label: 'Analytics', icon: BarChart3 },
   { path: '/calculator', label: 'Calculator', icon: Calculator },
   { path: '/fraud-shield', label: 'Fraud Shield', icon: Lock },
@@ -69,7 +69,7 @@ const Sidebar = () => {
             </div>
             <div>
               <h1 className="font-bold text-lg text-text-primary">TrustShield</h1>
-              <p className="text-xs text-text-tertiary uppercase tracking-wider">AI Protection</p>
+              <p className="text-xs text-text-tertiary uppercase tracking-wider">Verify Reality</p>
             </div>
           </div>
         </div>

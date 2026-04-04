@@ -25,8 +25,8 @@ const BeforeAfterComparison = ({
             <TrendingUp size={20} className="text-accent" />
           </div>
           <div>
-            <h3 className="text-lg font-bold text-text-primary">Your Protection Impact</h3>
-            <p className="text-sm text-text-secondary">See how TrustShield protects your income</p>
+            <h3 className="text-lg font-bold text-text-primary">Verified Impact Analysis</h3>
+            <p className="text-sm text-text-secondary">See how real-time verification protects your income</p>
           </div>
         </div>
 
@@ -63,14 +63,14 @@ const BeforeAfterComparison = ({
             </div>
             
             <p className="text-sm text-text-secondary mb-3">
-              Received instant payout
+              Verified payout approved
             </p>
             
             <p className="text-3xl font-bold text-success font-mono">
               {formatCurrency(payoutAmount)}
             </p>
             <p className="text-xs text-text-tertiary mt-1">
-              Auto-payout in 24 hours
+              Payout after validation
             </p>
           </div>
         </div>
@@ -106,7 +106,7 @@ const BeforeAfterComparison = ({
           <div className="mt-4 pt-4 border-t border-accent/10 flex items-center gap-2 text-sm text-text-secondary">
             <ArrowRight size={14} className="text-accent" />
             <span>
-              Without protection, you would have lost <span className="text-error font-semibold">{formatCurrency(lossAmount)}</span> today
+              Without verification, you would have lost <span className="text-error font-semibold">{formatCurrency(lossAmount)}</span> today
             </span>
           </div>
         </motion.div>

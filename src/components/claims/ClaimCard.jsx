@@ -62,14 +62,14 @@ const ClaimCard = ({ claim }) => {
       
       <div className="flex items-center justify-between pt-4 border-t border-border">
         <div>
-          <p className="text-xs text-text-tertiary mb-1">Claim Amount</p>
+          <p className="text-xs text-text-tertiary mb-1">Verified Payout</p>
           <p className="text-xl font-bold text-text-primary font-mono">
             {formatCurrency(claim.amount)}
           </p>
         </div>
         
         <div className="text-right">
-          <p className="text-xs text-text-tertiary mb-1">Claim ID</p>
+          <p className="text-xs text-text-tertiary mb-1">Event ID</p>
           <p className="text-sm font-mono text-text-secondary">{claim.id}</p>
         </div>
       </div>
@@ -77,7 +77,7 @@ const ClaimCard = ({ claim }) => {
       {claim.type === 'auto' && (
         <div className="mt-4 flex items-center gap-2 text-xs text-text-tertiary">
           <Zap size={12} className="text-accent" />
-          <span>Auto-generated via parametric trigger</span>
+          <span>System-generated after multi-signal validation</span>
         </div>
       )}
       

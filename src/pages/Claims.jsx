@@ -43,8 +43,8 @@ const Claims = () => {
   return (
     <div>
       <Header 
-        title="Claims Management" 
-        subtitle="Track and manage your insurance claims"
+        title="Verified Events & Payouts" 
+        subtitle="All entries are system-generated after validation"
       />
 
       {/* Stats Overview */}
@@ -60,7 +60,7 @@ const Claims = () => {
             </div>
             <div>
               <p className="text-2xl font-bold text-text-primary">{stats.total}</p>
-              <p className="text-sm text-text-secondary">Total Claims</p>
+              <p className="text-sm text-text-secondary">Total Events</p>
             </div>
           </div>
         </motion.div>
@@ -77,7 +77,7 @@ const Claims = () => {
             </div>
             <div>
               <p className="text-2xl font-bold text-text-primary">{stats.auto}</p>
-              <p className="text-sm text-text-secondary">Auto Claims</p>
+              <p className="text-sm text-text-secondary">Auto-Verified</p>
             </div>
           </div>
         </motion.div>
@@ -179,11 +179,11 @@ const Claims = () => {
       ) : (
         <div className="text-center py-16 bg-surface border border-border rounded-xl">
           <FileText size={48} className="text-text-tertiary mx-auto mb-4" />
-          <h3 className="text-lg font-medium text-text-primary mb-2">No claims found</h3>
+          <h3 className="text-lg font-medium text-text-primary mb-2">No verified events found</h3>
           <p className="text-text-secondary">
             {filter !== 'all' || statusFilter !== 'all' 
               ? 'Try adjusting your filters' 
-              : 'Your claims will appear here'}
+              : 'Verified events will appear here after validation'}
           </p>
         </div>
       )}

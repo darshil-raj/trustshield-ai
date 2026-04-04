@@ -138,9 +138,9 @@ const Dashboard = () => {
         />
         
         <StatCard
-          title="Trust Score"
+          title="Verification Confidence"
           value={`${state.trustScore}/100`}
-          subtitle="Based on claim history"
+          subtitle="Multi-signal validation score"
           icon={TrendingUp}
           color="info"
         />
@@ -172,7 +172,7 @@ const Dashboard = () => {
             <div className="flex items-center justify-between mb-4">
               <h2 className="text-xl font-bold text-text-primary flex items-center gap-2">
                 <Zap size={20} className="text-accent" />
-                Live Parametric Triggers
+                Real-Time Event Verification
               </h2>
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-success rounded-full animate-pulse"></span>
@@ -180,6 +180,9 @@ const Dashboard = () => {
               </div>
             </div>
             
+            <p className="text-sm text-text-secondary mb-4">
+              System continuously monitors real-world conditions to validate events
+            </p>
             <div className="grid sm:grid-cols-2 gap-4">
               {triggers.map((trigger, index) => (
                 <motion.div
@@ -279,6 +282,14 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Highlight Line */}
+      <div className="mt-8 p-4 bg-accent-dim border border-accent/20 rounded-xl">
+        <p className="text-sm text-text-secondary text-center">
+          <span className="text-accent font-semibold">Don't trust claims. Verify reality.</span>
+          {' '}All payouts are triggered only after multi-signal validation.
+        </p>
       </div>
 
       {/* Payout Notification Modal */}

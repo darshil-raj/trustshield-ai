@@ -6,10 +6,10 @@ const FraudShieldCard = () => {
   const navigate = useNavigate();
 
   const checks = [
-    { icon: MapPin, label: 'GPS matches delivery zone', status: 'verified' },
-    { icon: Activity, label: 'Movement detected', status: 'verified' },
-    { icon: Wifi, label: 'Weather verified', status: 'verified' },
-    { icon: Lock, label: 'No suspicious patterns', status: 'verified' }
+    { icon: MapPin, label: 'GPS location verified', status: 'verified' },
+    { icon: Activity, label: 'Movement pattern validated', status: 'verified' },
+    { icon: Wifi, label: 'Weather data cross-checked', status: 'verified' },
+    { icon: Lock, label: 'Detects spoofing before payout approval', status: 'verified' }
   ];
 
   return (
@@ -61,8 +61,7 @@ const FraudShieldCard = () => {
         {/* Key Message */}
         <div className="p-3 bg-surface/50 rounded-xl border border-success/10 mb-4">
           <p className="text-xs text-text-secondary leading-relaxed">
-            <span className="text-success font-semibold">Multi-signal validation</span> prevents GPS spoofing 
-            and coordinated fraud attacks.
+            We do not rely on a single signal. Every claim is cross-verified using multiple real-world data sources.
           </p>
         </div>
 

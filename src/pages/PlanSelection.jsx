@@ -48,14 +48,14 @@ const PlanSelection = () => {
         <div className="text-center mb-10">
           <Badge variant="accent" className="mb-4">
             <Sparkles size={12} />
-            Income Loss Protection Only
+            Real-Time Verification System
           </Badge>
           <h1 className="text-3xl md:text-4xl font-bold text-text-primary mb-3">
-            Choose Your Protection Plan
+            Choose Your Verification Plan
           </h1>
           <p className="text-text-secondary max-w-2xl mx-auto">
-            Select a plan that fits your risk profile. All plans cover income loss due to 
-            external disruptions like weather, AQI, and curfews.
+            Select a plan that fits your risk profile. All payouts are triggered only after 
+            multi-signal validation of real-world conditions.
           </p>
         </div>
 
@@ -152,7 +152,7 @@ const PlanSelection = () => {
         <div className="text-center mt-8">
           <div className="inline-flex items-center gap-2 text-text-tertiary">
             <Shield size={16} />
-            <span className="text-sm">Parametric insurance powered by AI</span>
+            <span className="text-sm">Don't trust claims. Verify reality.</span>
           </div>
         </div>
       </div>
